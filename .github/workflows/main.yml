@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to build techdocs
     steps:
+    - name: Checkout main
+      uses: actions/checkout@v1
     - name: Build techdocs
       uses: erikxiv/techdocs-action@v2.0.1
     - name: List output
