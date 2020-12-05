@@ -1,15 +1,11 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  build_techdocs_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to build techdocs
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: erikxiv/techdocs-action@v1
-      with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Build techdocs
+      uses: erikxiv/techdocs-action@v2
+    - name: List output
+      run: ls site
