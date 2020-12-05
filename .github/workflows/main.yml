@@ -6,6 +6,6 @@ jobs:
     name: A job to build techdocs
     steps:
     - name: Build techdocs
-      uses: erikxiv/techdocs-action@v2
+      uses: erikxiv/techdocs-action@v2.0.1
     - name: List output
       run: ls site
