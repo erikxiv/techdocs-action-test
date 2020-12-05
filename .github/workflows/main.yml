@@ -8,7 +8,7 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v1
     - name: Build techdocs
-      uses: erikxiv/techdocs-action@v2.0.1
+      uses: erikxiv/techdocs-action@v1
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2
       with:
